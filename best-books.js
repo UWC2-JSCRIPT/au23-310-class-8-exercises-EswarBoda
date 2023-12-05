@@ -33,6 +33,8 @@ formEl.addEventListener('submit', function(e) {
         for (let i = 0; i <= 4; i++) {
           // get book image url from the books results, and set it in <img> tag src attribute
           const imgEl = document.getElementById(`img${i}`);
+          imgEl.width = "50";
+          imgEl.height = "100";
           imgEl.src = responseJson.results.books[i].book_image;
 
           // Read title, author, description details from the books results
